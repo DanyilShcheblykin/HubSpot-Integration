@@ -1,0 +1,121 @@
+.form {
+  position: relative;
+  width: 520px;
+  padding: 60px;
+  background-color: rgb(138, 136, 136);
+  margin: auto;
+  h1 {
+    color: white;
+  }
+
+  input,
+  textarea {
+    background-color: rgb(138, 136, 136);
+    border: none;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 50px;
+    &::placeholder {
+      font-family: "Nunito Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+      color: #a7a7a7;
+    }
+    &:active,
+    :hover,
+    :focus {
+      outline: 0;
+      outline-offset: 0;
+    }
+  }
+}
+
+.textarea {
+  min-height: 120px;
+}
+
+.bySub {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  color: #e2e2e2;
+  margin-bottom: 20px;
+  a {
+    text-decoration: none;
+    color: red;
+  }
+}
+
+.text {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 120%;
+  color: #e2e2e2;
+  position: absolute;
+  left: 25px;
+  top: 3px;
+}
+
+.containerCheck {
+  display: flex;
+  position: relative;
+}
+
+.check {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.inside {
+  position: absolute;
+  top: 0;
+  border: 1.5px solid red;
+  padding: 9px;
+}
+
+.button {
+  
+  width: 100%;
+  padding: 12px;
+  margin-top: 50px;
+  background-color: red;
+  border: red;
+  span {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #ffffff;
+   
+  }
+  &:hover{
+    background-color: rgb(243, 72, 72);
+  }
+
+  &:active{
+    span{
+      color: black;
+
+    }
+  }
+  
+  
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color:    red;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    red;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    red;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:    red;
+}
